@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import 'vite/modulepreload-polyfill'
 import UserPlaylists from "./UserPlaylists.jsx"
+import MakePlaylist from "./MakePlaylist.jsx"
 import {
   createHashRouter,
   RouterProvider
@@ -17,6 +18,10 @@ const router = createHashRouter([
       {
         path: "/",
         element: <UserPlaylists />
+      },
+      {
+        path: "/new",
+        element: <MakePlaylist />
       },
     ]
   }
